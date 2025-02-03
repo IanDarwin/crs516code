@@ -1,0 +1,2 @@
+This project works on the DAO pattern using the Tehi game
+as an example.
