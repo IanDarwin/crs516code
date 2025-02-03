@@ -23,4 +23,11 @@ public class RankTest {
 	public void testRankToIntNotZeroOrigin() {
 		assertThrows(IllegalArgumentException.class, () -> Rank.intToRank(0));
 	}
+
+	@Test
+	public void testGetName() {
+		assertEquals("A", Rank.ACE.getName());
+		assertEquals("7", Rank.SEVEN.getName());
+		assertEquals("K", Rank.KING.getName());
+	}
 }
