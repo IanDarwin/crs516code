@@ -1,3 +1,5 @@
+package com.darwinsys.crs516;
+
 import java.lang.reflect.*;
 import java.util.*;
 
@@ -18,11 +20,8 @@ public class Display {
 	}
 
 	static void display(Object o) {
-		System.out.println("*** Displaying " + o + "***");
-		Class<?> c = o.getClass();
-		System.out.println(c);
-		for (Method m : c.getDeclaredMethods()) {
-			System.out.println(m);
-		}
+		System.out.println("Displaying " + o);
+		// TODO replace this with your solution:
+		System.out.println("Not written yet!!");
 	}
 }
