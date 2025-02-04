@@ -43,15 +43,4 @@ public enum Rank {
 	public String toString() {
 		return name;
 	}
-
-	// This stuff does NOT belong in this class!
-	private static final Random random = new Random();
-
-	/**
-	 * Randomly selects a rank.
-	 * @return
-	 */
-	public static Rank randomRank() {
-	    return values()[random.nextInt(MAX)];
-	}
 }
