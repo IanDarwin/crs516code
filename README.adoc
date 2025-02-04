@@ -1,0 +1,5 @@
+= crs516code
+
+This repo is some extra code for Learning Tree Course 516,
+Java Best Practices.
+It won't be much use to anyone else.
