@@ -1,17 +1,15 @@
 package com.ltree.crs516;
 
-import java.util.Random;
-
 public enum Rank {
 	ACE("A"), TWO("2"), THREE("3"), FOUR("4"), FIVE("5"), 
 	SIX("6"), SEVEN("7"), EIGHT("8"), NINE("9"), TEN("10"), 
 	JACK("J"), QUEEN("Q"), KING("K");
 
 	static final int MAX = KING.ordinal() + 1;
-	private final String name;
+	private final String faceName;
 
-	public String getName() {
-		return name;
+	public String getFaceName() {
+		return faceName;
 	}
 
 	public int getRankNumber() {
@@ -20,14 +18,14 @@ public enum Rank {
 
 	/** Construct a Rank object.
 	 * Enum constructors should always be private!
-	 * @param name
+	 * @param faceName
 	 */
-	private Rank(String name) {
-		this.name = name;
+	private Rank(String faceName) {
+		this.faceName = faceName;
 	}
 
 	/**
-	 * Converts an int to a Rank. Name shortened
+	 * Converts an int to a Rank.
 	 * 
 	 * @param rankInt The 1-origin rank (ACE=1, KING=13, etc)
 	 * @return The corresponding Rank object.
@@ -41,6 +39,6 @@ public enum Rank {
 	}
 
 	public String toString() {
-		return name;
+		return faceName;
 	}
 }
