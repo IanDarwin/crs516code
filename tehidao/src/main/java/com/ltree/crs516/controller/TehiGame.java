@@ -24,7 +24,7 @@ public final class TehiGame extends Observable implements Serializable {
 	private transient  final GameState STAND_OR_SWAP = new StandOrSwap();
 	private transient  final GameState END = new EndGame();
 
-	// TODO 1: create an instance of a TehiDAO implementatino, and store the 
+	// TODO 1: create an instance of a TehiDAO implementation, and store the 
 	// reference in the dao field below.
 	private transient TehiDAO dao = new TehiSerializationDao();
 
